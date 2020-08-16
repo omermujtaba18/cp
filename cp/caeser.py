@@ -27,12 +27,11 @@ def encrypt(plaintext: str, key: int):
             alpha_index = (ord(char)-19) % 26
             cipher_index = (alpha_index + key) % 26
 
-            if islower:
-                ciphertext += chr(cipher_index + 97)
-            else:
-                ciphertext += chr(cipher_index + 65)
+            cipher = chr(cipher_index + 97)
+            ciphertext += cipher if islower else cipher.upper()
+
         else:
-            ciphertext += " "
+            ciphertext += char
 
     return ciphertext
 
@@ -52,12 +51,10 @@ def decrypt(ciphertext, key):
             alpha_index = (ord(char) - 19) % 26
             plain_index = (alpha_index - key) % 26
 
-            if islower:
-                plaintext += chr(plain_index + 97)
-            else:
-                plaintext += chr(plain_index + 65)
+            plain = chr(plain_index + 97)
+            plaintext += plain if islower else plain.upper()
 
         else:
-            plaintext += " "
+            plaintext += char
 
     return plaintext
