@@ -2,7 +2,7 @@
 A python package for Encryption/Decryption
 
 
-###### How to use
+### How to use
 
 ```python
 from cp.caeser import encrypt,decrypt
