@@ -1,5 +1,3 @@
-import random
-
 # p,g are shared globally for alice and bob
 # 1. alice use generate_key with its secret int
 # 2. bob use generate_key with its secret int
