@@ -5,15 +5,25 @@ A python package for Encryption/Decryption
 - Caeser Cipher
 - Substitution Cipher
 
-### How to use
+### Import package
 
 ```python
-from cp.caeser import encrypt,decrypt
+
+from cp.<caeser,substitution> import encrypt,decrypt
+
+```
+
+```python
 
 plaintext = "Hello World"
-ciphertext = encrypt(plaintext,1)
 
-ciphertext = "Hello World"
-plaintext = decrypt(ciphertext,1)
+# Caeser
+ciphertext = encrypt(plaintext,key=1)
+plaintext = decrypt(ciphertext,key=1)
+
+# Substitution
+key = generate_key()
+ciphertext = encrypt(plaintext,key)
+plaintext = decrypt(ciphertext,key)
 
 ```
