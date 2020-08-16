@@ -5,13 +5,15 @@ A python package for Encryption/Decryption
 - Caeser Cipher
 - Substitution Cipher
 
-### Import package
+#### Import package
 
 ```python
 
 from cp.<caeser,substitution> import encrypt,decrypt
 
 ```
+
+#### How to use
 
 ```python
 
