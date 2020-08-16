@@ -1,6 +1,9 @@
 # Crypto Python
 A python package for Encryption/Decryption
 
+### Crypto Algorithms
+- Caeser Cipher
+- Substitution Cipher
 
 ### How to use
 
